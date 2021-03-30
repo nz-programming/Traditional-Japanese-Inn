@@ -5,18 +5,83 @@
     <title>石井花壇 | 温海温泉旅館【公式サイト】</title>
     <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+    <!-- Original CSS -->
     <link rel="stylesheet" href="css/main.css">
 
 </head>
-<section class="wrap">
-<nav>
-    <ul>
-        <li>hoge</li>
-        <li>hoge</li>
-        <li>hoge</li>
-    </ul>
-</nav>
-</section>
+
+<body>
+    <!-- navigation bar -->
+    <header>
+        <div class="accommodation">
+            <img class="logo" src="./source/logo02.png" width = "40" height = "40" alt = "logo">
+            <h1 class="accommodation-name">石井花壇</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>お部屋</li>
+                <li>お料理</li>
+                <li>温泉</li>
+            </ul>
+        </nav>
+
+        <!-- reservation button -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="">宿泊予約</button>
+
+        <!-- modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="margin: 0 auto;">宿泊予約</h5>
+                <button type="button" class="btn-close" style="margin: 0 auto;" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">お名前</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">メールアドレス</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">ご希望プラン（空いているプランのみ表示されます）</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label">日時選択</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer row justify-content-center">
+                <button type="button" class="btn btn-outline-dark col-4">送信する</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="reservation-button">
+            
+        </a>
+
+    </header>
+
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+        <!-- Original JS -->
+        <script src="./js/main.js"></script>
+</body>
+
 
 </html>
