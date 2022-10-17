@@ -1,4 +1,4 @@
-## Website - Traditional JapaneseInn
+## Website - Traditional Japanese Inn
 This website is for the practice of front-end web technology, JavaScript, HTML and CSS.
 This traditional Japanese Inn is fictional and I wrote this code based on an already-made comprehensive layout.
 I made this without a framework or library except for jQuery as much as possible so that I can adjust the detail.
